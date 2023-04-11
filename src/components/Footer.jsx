@@ -1,11 +1,12 @@
+import logo from "../assests/Asset 20@4x.png"
 const Footer = () => {
     return (
-        <footer>
+        <footer className="Footer paddining">
             <div className="footer-logo">
-
+                <img src={logo} />
             </div>
             <div className="doormat-navigation">
-            <h3>Doormat Navigation</h3>
+                <h3>Doormat Navigation</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -16,7 +17,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="contact">
-            <h3>Contact</h3>
+                <h3>Contact</h3>
                 <ul>
                     <li><a href="#">Address</a></li>
                     <li><a href="#">Phone number</a></li>
@@ -24,7 +25,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="social-media">
-            <h3>Social Media Links</h3>
+                <h3>Social Media Links</h3>
                 <ul>
                     <li><a href="#">Address</a></li>
                     <li><a href="#">Phone number</a></li>

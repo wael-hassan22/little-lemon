@@ -1,8 +1,8 @@
 import logo from "../assests/Logo .svg"
 const Nav = () => {
     return (
-        <nav>
-            <div className="nav-logo">
+        <nav className="paddining">
+            <div className="nav-logo ">
                 <img src={logo} alt=""/>
             </div>
             <ul className="nav-list">

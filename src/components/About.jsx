@@ -4,8 +4,8 @@ const About = () => {
   return (
         <section className='About paddining'>
               <div className="about-title">
-                <h1>Little Lemon</h1>
-                <h2>Chicago</h2>
+                <h2 className="about-name">Little Lemon</h2>
+                <h3>Chicago</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div className="about-image">

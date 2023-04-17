@@ -1,0 +1,55 @@
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #495E57;
+    padding-top: 10px;
+    height: 406px;
+}
+
+.header-title {
+  width: 45%;
+  margin-bottom: 20px;
+  color: #EDEF;
+}
+.header-image {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+.header-image img {
+  width: 100%;
+}
+.header-title h1,.about-title h1 {
+  font-family: 'Markazi Text', serif;
+  color: #F4CE14;
+  font-size: 64px;
+  font-weight: meduim;
+  margin-bottom: 0;
+}
+.header-title h2,.about-title h2 {
+  font-family: 'Karla', sans-serif;
+  margin-bottom: 0;
+}
+
+.header-title button {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+header {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-image {
+    display: none;
+}
+.paddining {
+    padding: 0;
+} 
+}

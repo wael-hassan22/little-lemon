@@ -3,6 +3,7 @@ import greakSalad from "../assests/greek salad.jpg"
 import lemonDesert from "../assests/lemon dessert.jpg"
 import bruchrtta from "../assests/bruchetta.svg"
 import Button from "./Button"
+import "../components/styles/HighlightStyle.css"
 const Highlights = () => {
     return (
        <section className="highlights paddining" >

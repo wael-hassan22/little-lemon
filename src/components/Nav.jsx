@@ -1,18 +1,33 @@
+import { useState } from "react"
 import logo from "../assests/Logo .svg"
+import "../components/styles/NavStyle.css"
+import { NavLink } from "react-router-dom"
 const Nav = () => {
+    const [open, setOpen] = useState("true")
+    const [close, setClose] = useState("false")
+    const handleClick = () => {
+        setOpen(!open)
+        setClose(!close)
+    } 
     return (
-        <nav className="paddining">
-            <div className="nav-logo ">
-                <img src={logo} alt=""/>
+        <nav>
+            <div className="ham">
+                <span className="hamopen" style={open ? {display :"none"} : {display :"block"}} onClick={handleClick}>=</span>
+                <span className="hamclose" style={close ? {display :"block"} : {display :"none"}} onClick={handleClick}>X</span>
             </div>
-            <ul className="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Order Online</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
+           <div className="open-nav" style={close ? {display :"block"} : {display :"none"}}>
+                <div className="nav-logo ">
+                        <img src={logo} alt=""/>
+                </div>
+                <ul className="nav-list">
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="#">About</NavLink></li>
+                    <li><NavLink to="#">Menu</NavLink></li>
+                    <li><NavLink to="/reservations">Reservations</NavLink></li>
+                    <li><NavLink to="#">Order Online</NavLink></li>
+                    <li><NavLink to="#">Login</NavLink></li>
+                </ul>
+           </div>
         </nav>
     )
 }
